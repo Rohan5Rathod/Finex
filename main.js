@@ -9,19 +9,16 @@ nav_header.classList.toggle("active")
 mobile_nav.addEventListener("click",()=>toggleNavbar());
 
 
-var swiper = new Swiper(".top", {
-    spaceBetween: 30,
-    centeredSlides: true,
-    autoplay: {
-      delay: 2500,
+var swiper = new Swiper(".mySwiper", {
+  effect: "fade",
+  speed: 600,
+  parallax: true,
+  autoplay: {
+      delay: 4000,
       disableOnInteraction: false,
     },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
